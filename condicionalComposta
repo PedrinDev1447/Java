@@ -1,0 +1,44 @@
+package defaultPackage; 
+// Define o pacote do arquivo. O nome do pacote é 'defaultPackage' neste caso.
+
+import java.util.Scanner; 
+// Importa a classe Scanner da biblioteca java.util, que permite a leitura de entradas do usuário.
+
+public class Pedro { 
+// Declara uma classe pública chamada 'Pedro', que contém o método principal (main).
+
+    public static void main(String[] args) { 
+    // Declara o método principal, onde a execução do programa começa. O 'main' é estático e recebe um array de strings como parâmetro (args).
+
+        Scanner sc = new Scanner(System.in); 
+        // Cria uma nova instância da classe Scanner, chamada 'sc', que será usada para ler entradas do teclado.
+
+        int hora; 
+        // Declara uma variável inteira chamada 'hora', que armazenará a hora fornecida pelo usuário.
+
+        System.out.println("Quantas horas?"); 
+        // Exibe a mensagem "Quantas horas?" no console para solicitar ao usuário que insira um valor.
+
+        hora = sc.nextInt(); 
+        // Lê o próximo número inteiro digitado pelo usuário e o armazena na variável 'hora'.
+
+        if(hora < 12) { 
+        // Verifica se o valor de 'hora' é menor que 12. Se for, executa o bloco de código dentro das chaves.
+
+            System.out.println("Bom dia!"); 
+            // Se a condição 'hora < 12' for verdadeira, exibe "Bom dia!" no console.
+
+        } else { 
+        // Caso contrário, ou seja, se a condição 'hora < 12' for falsa, o bloco de código abaixo será executado.
+
+            System.out.println("Boa Tarde"); 
+            // Exibe "Boa Tarde" no console se a condição do if não for satisfeita.
+
+        }
+
+        sc.close(); 
+        // Fecha o objeto Scanner 'sc' para liberar o recurso e evitar vazamento de memória.
+
+    }
+
+}
